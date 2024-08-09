@@ -1,4 +1,4 @@
-🇪🇸 Este es un proyecto en el que sigo trabajando para practicar mis habilidades en HTML, CSS y JavaScript.
+ES Este es un proyecto en el que sigo trabajando para practicar mis habilidades en HTML, CSS y JavaScript.
 
 EN This is a project I'm continuously working on to practice my HTML, CSS, and JavaScript skills.
 
