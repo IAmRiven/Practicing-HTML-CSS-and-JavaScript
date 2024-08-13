@@ -4,6 +4,10 @@
 // const message = document.getElementById('razon');
 // const email = document.getElementById('email');
 
+// You need to complete this information with yours from https://elasticemail.com :)
+//
+// With ❤️ from IAmRiven
+
 // function sendEmail() {
 //     const bodyMessage = `Nombre completo: ${nombreCompleto.value}<br> Discord ID: ${discordId.value}<br>Correo electrónico: ${email.value}<br>Email de contacto: ${email.value}<br> Razón: ${razon.value}`;
 //     Email.send({
