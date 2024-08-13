@@ -1,3 +1,30 @@
+// const form = document.querySelector('form');
+// const nombreCompleto = document.getElementById('name');
+// const discordId = document.getElementById('discord');
+// const message = document.getElementById('razon');
+// const email = document.getElementById('email');
+
+// function sendEmail() {
+//     const bodyMessage = `Nombre completo: ${nombreCompleto.value}<br> Discord ID: ${discordId.value}<br>Correo electrónico: ${email.value}<br>Email de contacto: ${email.value}<br> Razón: ${razon.value}`;
+//     Email.send({
+//         Host: "smtp.elasticemail.com",
+//         Username: "your email",
+//         Password: "password_here",
+//         To: 'your email',
+//         From: "your email",
+//         Subject: "Mensaje desde el portafolio",
+//         Body: bodyMessage
+//     }).then(
+//         message => alert(message)
+//     );
+// }
+
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     sendEmail();
+// })
+
 function showNotification(message) {
     const notification = document.getElementById('notification');
     notification.textContent = message;

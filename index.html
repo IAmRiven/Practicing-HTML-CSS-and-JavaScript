@@ -9,7 +9,7 @@
     <link rel="icon" href="/images/perfil-github.webp" type="image/webp">
     <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="/scripts/index.js"></script>
+
 
 </head>
 
@@ -91,17 +91,22 @@
         <h1 id="contacto">Formulario de contacto</h1>
         <div class="formulario">
             <form action="#">
-                <input type="text" name="nombre-completo" placeholder="Nombre completo" required>
-                <input type="text" name="discord-id" placeholder="Usuario de Discord">
-                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="text" name="name" id="name" placeholder="Nombre completo" autocomplete="off" required>
+                <input type="text" name="discord" id="discord" placeholder="Usuario de Discord" autocomplete="off"
+                    required>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" autocomplete="off"
+                    required>
                 <textarea name="razon" id="razon" cols="10" rows="5" placeholder="Motivo del contacto"
-                    required></textarea>
-                <button class="btn">Enviar</button>
-
+                    autocomplete="off" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
             </form>
             <img src="/images/form-contact.jpg">
         </div>
         <section>
+
+            <script src="/scripts/index.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="/scripts/emails.js"></script>
 </body>
 
 </html>
