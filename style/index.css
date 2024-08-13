@@ -4,18 +4,19 @@
 :root {
     --primary-color: #00e187;
     --background-color: #1c1c22;
+    --borde: #02d664;
+    --text: white;
+    --line: #c4c4c4;
 }
 
 * {
     color: white;
     margin: 0px;
     padding: 0px;
-    outline: none;
-    border: none;
 }
 
 body {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', sans-serif;
     background-color: var(--background-color);
 }
 
@@ -92,7 +93,7 @@ header {
 
 .content p {
     padding-top: 1rem;
-    max-width: 1000px;
+    max-width: 900px;
     margin-bottom: 3rem;
     font-size: 19px;
 }
@@ -166,16 +167,13 @@ header {
 /* Section 1 */
 
 .timeline {
-    --accent: #02d664;
-    --text: white;
-    --line: #c4c4c4;
     background: var(--background);
     color: var(--text);
 }
 
 .timeline h1 {
     font-size: 30px;
-    border-left: 4px solid var(--accent);
+    border-left: 4px solid var(--borde);
     padding: 10px 12px 10px;
     margin-bottom: 30px;
 }
@@ -207,7 +205,7 @@ header {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-style: normal;
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free', sans-serif;
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
@@ -217,7 +215,7 @@ header {
     margin-top: 1px;
     right: -15px;
     font-size: 25px;
-    color: var(--accent);
+    color: var(--borde);
 }
 
 .timeline ul li {
@@ -276,7 +274,7 @@ header {
 }
 
 .timeline ul li h3 {
-    color: var(--accent);
+    color: var(--borde);
     margin: 0;
     margin-bottom: 5px;
     font-size: 1.6em;
@@ -290,12 +288,73 @@ header {
     margin-bottom: 5rem;
 }
 
-#contacto {
-    font-size: 30px;
-    border-left: 4px solid var(--accent);
-    padding: 10px 12px 10px;
-    margin-bottom: 30px;
+
+
+
+/* Section content 2 */
+.contact {
+    max-width: 1700px;
+    margin: auto;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.contact h1 {
+    font-size: 30px;
+    border-left: 4px solid var(--borde);
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    background: var(--background);
+    color: var(--text);
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.formulario form {
+    width: 50%;
+}
+
+.formulario img {
+    max-width: 500px;
+    padding-right: 100px;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: white;
+    color: black;
+    width: 100%;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+.formulario .btn {
+    display: block;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 30px;
+}
+
 
 
 /* Notificaciones de copiar */
@@ -312,6 +371,8 @@ header {
     z-index: 1000;
     transition: all 0.3s ease;
 }
+
+
 
 
 /* Barra de navegación - Urls / Logo / Imagen PARA MÓVIL */
@@ -354,7 +415,7 @@ header {
 
     .content p {
         padding-top: 1rem;
-        max-width: 100%;
+        max-width: 80%;
         margin-bottom: 2rem;
         font-size: 1rem;
     }
@@ -390,10 +451,49 @@ header {
 
     .timeline h1 {
         font-size: 30px;
-        border-left: 4px solid var(--accent);
+        border-left: 4px solid var(--borde);
         padding: 10px 12px 10px;
         margin-bottom: 30px;
         margin-top: 50px;
+    }
+
+    /* Formulario */
+    .contact {
+        padding: 5rem;
+    }
+
+    .contact h1 {
+        font-size: 28px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+
+    .formulario {
+        flex-direction: column;
+        padding: 20px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .formulario form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .formulario img {
+        display: none;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 18px;
+        padding: 10px;
+        width: 97%;
+    }
+
+    .formulario .btn {
+        font-size: 20px;
+        padding: 12px;
     }
 }
 
