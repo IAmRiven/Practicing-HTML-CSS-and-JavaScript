@@ -364,7 +364,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     padding-bottom: 10px;
 }
 
@@ -509,6 +508,16 @@ footer a {
     .formulario .btn {
         font-size: 20px;
         padding: 12px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
     }
 }
 
