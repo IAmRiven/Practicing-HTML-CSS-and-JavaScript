@@ -357,6 +357,21 @@ header {
 
 
 
+/* FOOTER */
+
+footer {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
 /* Notificaciones de copiar */
 .notification {
     position: fixed;
